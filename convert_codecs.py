@@ -15,7 +15,7 @@ from docopt import docopt
 __version__ = '0.1'
 __author__ = 'Honghe'
 
-BLOCKSIZE = 1024**2 # size in bytes
+BLOCKSIZE = 1024 # number of characters in corresponding encoding, not bytes 
 
 def convert(sourceFile, targetFile, sourceEncoding, targetEncoding):
     with codecs.open(sourceFile, 'rb', sourceEncoding) as sfile:
